@@ -1,0 +1,5 @@
+0x00: LUI   x2, 0x0           
+0x04: ADDI  x2, x2, 0x800     
+0x08: AUIPC x1, 0x5321           
+0x0C: SW    x1, 0(x2)         
+0x10: JAL   x0, 0 
