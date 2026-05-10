@@ -55,19 +55,17 @@ module tb_Fibonacci();
         #100;
 
         rst_raw = 0;
-        $display("\n==============================================");
         $display("   STARTING FIBONACCI SIMULATION");
-        $display("==============================================\n");
+
 
         $monitor("Time: %0t ns | LEDs Display: %0d", $time, led);
 
        
         #15000; 
 
-       
-        $display("\n==============================================");
+ 
         $display("   COMPUTATION FINISHED. CHECKING DATA MEMORY:");
-        $display("==============================================");
+
         
       
         $display("Mem[0] (Fib 0) : %0d", uut.u_datamem.mem[0]);
@@ -81,9 +79,8 @@ module tb_Fibonacci();
         $display("Mem[8] (Fib 8) : %0d", uut.u_datamem.mem[8]);
         $display("Mem[9] (Fib 9) : %0d", uut.u_datamem.mem[9]);
 
-        $display("\n==============================================");
         $display("   SIMULATION COMPLETE");
-        $display("==============================================\n");
+
         $finish;
     end
 
